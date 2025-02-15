@@ -38,6 +38,16 @@ Zorua is an all in one tool to manage multiple Pokémon GO MITMs. Zorua is used 
 - Auto Update Chiteromans Play Integrity Fix Magisk Module
 - Auto Update Furtif Tools
 
+# Zorua Setup
+
+To get Zorua to work you need to do some things. I listed the steps for it down below:
+
+1. ```cp configs/config.ini.example configs/config.ini```
+2. ```cp configs/devices.txt configs/devices.txt```
+3. Fill out config.ini, a more in-depth config guide is listed below.
+4. Fill out devices.txt, an example is listed in the file.
+5. You can do ./zorua.sh --function, a list of functions and their respective commands are listed below.
+
 # Zorua - ToDoList
 
 - [ ] Add more MITMs
