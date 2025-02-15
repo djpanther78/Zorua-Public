@@ -36,6 +36,7 @@ Zorua is an all in one tool to manage multiple Pokémon GO MITMs. Zorua is used 
 - Auto Update PoGo
 - Auto Setup Furtif Tools
 - Auto Update Chiteromans Play Integrity Fix Magisk Module
+- Auto Update Furtif Tools
 
 # Zorua - ToDoList
 
