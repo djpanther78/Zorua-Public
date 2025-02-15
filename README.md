@@ -48,7 +48,7 @@ cp configs/config.ini.example configs/config.ini
 ```
 4.
 ```bash
-cp configs/devices.txt configs/devices.txt
+cp configs/devices.txt.example configs/devices.txt
 ```
 6. Fill out config.ini, a more in-depth config guide is listed below.
 7. Fill out devices.txt, an example is listed in the file.
