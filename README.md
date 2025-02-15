@@ -67,6 +67,36 @@ dos2unix zorua.sh
 
 8. You can do ./zorua.sh --function, a list of functions and their respective commands are listed below.
 
+# Zorua Dependicies
+
+1. Unzip
+```bash
+sudo apt install unzip
+```
+
+3. ADB
+```bash
+wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
+```
+```bash
+unzip platform-tools-latest-linux.zip
+```
+```bash
+mv platform-tools-linux ~/platform-tools
+```
+```bash
+nano ~/.bashrc
+```
+Add the following
+```bash
+export PATH="$HOME/platform-tools:$PATH"
+```
+```bash
+source ~/.bashrc
+```
+You now have Platform-Tools installed!
+
+
 # Zorua - ToDoList
 
 - [ ] Add more MITMs
