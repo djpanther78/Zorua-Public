@@ -74,7 +74,7 @@ dos2unix zorua.sh
 sudo apt install unzip
 ```
 
-3. ADB
+2. ADB
 ```bash
 wget https://dl.google.com/android/repository/platform-tools-latest-linux.zip
 ```
