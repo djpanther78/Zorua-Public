@@ -38,7 +38,7 @@ Zorua is an all in one tool to manage multiple Pokémon GO MITMs. Zorua is used 
 - Auto Update Chiteromans Play Integrity Fix Magisk Module
 - Auto Update Furtif Tools
 
-# Zorua Setup
+# Zorua - Setup
 
 To get Zorua to work you need to do some things. I listed the steps for it down below:
 
@@ -67,7 +67,7 @@ dos2unix zorua.sh
 
 8. You can do ./zorua.sh --function, a list of functions and their respective commands are listed below.
 
-# Zorua Dependicies
+# Zorua - Dependicies
 
 1. Unzip
 ```bash
@@ -107,13 +107,47 @@ You now have Platform-Tools installed!
 - [ ] Automatically delete Android System apps that aren't significant
 - [ ] A set up script (aConf?)
 
-# Zorua - Setup
-
-Depending on what you want to use Zorua for there are different things you will need to. Zorua uses ADB (the Android Debug Bridge) shell to execute commands on the device. The device has to be rooted with Magisk. If you use PoGoROM this is already done. If you want to use things from APKMirror (especially for the WebView Updater) you will need to set up a simple file server/make a download link and add that in the config. This is because I haven't been able to download something via APKMirror. I will keep trying some things to get that to work. You can also download it and put it in a folder. That will also be configurable. 
-
 # Zorua - Config
 
-```Configs here```⠀
+```ini
+[system]
+webview_download_link =                                                                     # Webview downloadable link, but the 96 version
+webview_download_link_130 =                                                                 # Webview downloadable link, but the 130 version
+
+[logging]
+logging_info_color = '\033[0;34m'                                                           # Logging info color, the most used one
+logging_warning_color = '\033[0;33m'                                                        # Logging warning color
+logging_error_color = '\033[0;31m'                                                          # Logging error color
+logging_succes_color = '\033[0;32m'                                                         # Logging succes color
+logging_nc_color = '\033[0m'                                                                # Logging NC color
+
+[pogo]
+version = latest                                                                            # PoGo version you want to use, in most cases this is latest
+pogo_mirror_url = https://mirror.unownhash.com                                              # PoGo mirror url, the best option is to use the Unownhash.com mirror
+pogo_arch = arm64-v8a                                                                       # PoGo Arch, the arch you want the PoGo APK to be this is arm64-v8a in most cases
+pogo_apk_arch = arm64-v8a                                                                   # PoGo APK arch, the same as the one above
+
+[cosmog]
+package_name = com.nianticlabs.pokemongo.ares                                               # Cosmog package name
+download_link =                                                                             # Cosmog download link
+
+[pogolib]
+mirror_url = https://mirror.unownhash.com                                                   # PoGo APK mirror url to get the PoGoLib from, the Unownhash.com mirror works the best
+arch = arm64-v8a                                                                            # PoGoLib Arch, should in most cases be arm64-v8a
+version = latest                                                                            # PoGoLib version
+
+[furtif_tools]
+mapworld_download_url = https://protomines.ddns.net/apk/MapWorld-release.zip                # Mapworld download link
+
+[adb]
+device_file = configs/devices.txt                                                           # Device file containing the device IP addresses
+```
+
+# Zorua - Webview Links
+Old Webview (96): https://www.apkmirror.com/apk/google-inc/android-system-webview/android-system-webview-96-0-4664-92-release/
+Newer webview (130): https://www.apkmirror.com/apk/google-inc/android-system-webview/android-system-webview-130.0.6723.40-release/
+
+Keep in mind, that it will NOT work to put a APKMIrror link as download link. I tried that and it kept giving me unusabe files.
 
 # Zorua - Contributing⠀⠀
 
