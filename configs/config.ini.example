@@ -1,0 +1,32 @@
+[system]
+webview_download_link = 
+webview_download_link_130 = 
+
+[logging]
+logging_info_color = '\033[0;34m'
+logging_warning_color = '\033[0;33m'
+logging_error_color = '\033[0;31m'
+logging_succes_color = '\033[0;32m'
+logging_nc_color = '\033[0m'  
+
+[pogo]
+version = latest
+pogo_mirror_url = https://mirror.unownhash.com
+pogo_arch = arm64-v8a
+pogo_apk_arch = arm64-v8a
+
+[cosmog]
+package_name = com.nianticlabs.pokemongo.ares
+download_link = 
+
+[pogolib]
+mirror_url = https://mirror.unownhash.com
+arch = arm64-v8a
+version = latest
+
+[furtif_tools]
+enabled = false
+mapworld_download_url = https://protomines.ddns.net/apk/MapWorld-release.zip
+
+[adb]
+device_file = configs/devices.txt
