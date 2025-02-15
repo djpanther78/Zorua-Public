@@ -52,7 +52,20 @@ cp configs/devices.txt.example configs/devices.txt
 ```
 6. Fill out config.ini, a more in-depth config guide is listed below.
 7. Fill out devices.txt, an example is listed in the file.
-8. You can do ./zorua.sh --function, a list of functions and their respective commands are listed below.
+8. Chmod the script
+```bash
+sudo chmod +x zorua.sh
+```
+9. Convert the script to be able to run it, since I partly wrote it in VS code on Windows.
+```bash
+sudo apt-get install dos2unix
+```
+10.
+```bash
+dos2unix zorua.sh
+```
+
+11. You can do ./zorua.sh --function, a list of functions and their respective commands are listed below.
 
 # Zorua - ToDoList
 
