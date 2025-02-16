@@ -150,6 +150,19 @@ Newer webview (130): https://www.apkmirror.com/apk/google-inc/android-system-web
 
 Keep in mind, that it will NOT work to put a APKMIrror link as download link. I tried that and it kept giving me unusabe files.
 
+# Zorua - Updating
+
+Because of dos2unix, git pull will shoot you an error that you changed a file. This is easily solvable by just removing the zorua.sh file and then git pulling. Here is how to do that:
+
+1.
+```shell
+rm zorua.sh
+```
+2.
+```shell
+git pull
+```
+
 # Zorua - Contributing⠀⠀
 
 I would love people to help make Zorua better. PRs are always appreciated! Here is a short guide on how to do that.
