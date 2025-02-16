@@ -698,7 +698,7 @@ help() {
 
 while [[ "$#" -gt 0 ]]; do
     case "$1" in
-        --update_cosmog)
+        --update_lib)
                 update_pogo_lib
             ;;  
         --update_cosmog)
