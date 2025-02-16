@@ -94,7 +94,11 @@ export PATH="$HOME/platform-tools:$PATH"
 ```bash
 source ~/.bashrc
 ```
-You now have Platform-Tools installed!
+3. JQ
+
+```bash
+sudo apt install jq
+```
 
 
 # Zorua - ToDoList
