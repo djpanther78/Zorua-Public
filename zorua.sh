@@ -698,22 +698,12 @@ help() {
 
 while [[ "$#" -gt 0 ]]; do
     case "$1" in
-        --update_lib)
-            if [ "$COSMOG_ENABLED" == "true" ]; then
-                update_pogo_lib
-            else
-                echo "Cosmog module not enabled."
-                shift 2
-            fi
-            ;;
         --update_cosmog)
-            if [ "$COSMOG_ENABLED" == "true" ]; then
-                update_cosmog
-            else
-                echo "Cosmog module not enabled."
-                shift
-            fi
-            ;;
+                update_pogo_lib
+            ;;  
+        --update_cosmog)
+                update_cosmog 
+            ;;  
         --help)
                 help 
             ;;     
