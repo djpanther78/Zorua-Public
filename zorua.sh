@@ -579,8 +579,11 @@ update_furtif_tools () {
     mkdir data
     log_info "Creating APKs directory..."
     mkdir data/apks
-    log_info "Wgetting mapworld apk..."
-    wget -O data/apks/mapworld.apk "$MAPWORLD_DOWNLOAD_LINK"
+    log_info "Wgetting mapworld zip..."
+    wget -O data/apks/mapworld.zip "$MAPWORLD_DOWNLOAD_LINK"
+    log_info "Unzipping mapworld apk zip..."
+    unzip -d data/apks/mapworld.apk data/apks/mapworld.zip
+    
 
             devices=()
     while IFS= read -r device_ip; do
